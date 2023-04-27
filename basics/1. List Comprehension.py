@@ -1,3 +1,4 @@
+import random
 
 numbers = [3, 6, 7, 8, 6, 4, 6]
 is_even = [x if x % 2 == 0 else 0 for x in numbers]
@@ -13,4 +14,12 @@ print(intersection)
 list_3 = [1, 2, 3, 4, 5, 6]
 x = [[a**2, a**3] for a in list_3]
 print(x)
+
+
+def square_num(a):
+    return a ** 2
+
+
+y = [square_num(x) for x in range(random.randint(2,10))]
+print(y)
 
